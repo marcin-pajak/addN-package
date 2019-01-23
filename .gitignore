@@ -1,0 +1,7 @@
+lib
+
+## VSCode Specific ##
+.vscode
+
+## Generic files ##
+*.DS_Store
