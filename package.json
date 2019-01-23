@@ -1,0 +1,26 @@
+{
+  "name": "addn-package",
+  "version": "1.0.0",
+  "main": "lib/main.js",
+  "repository": "git@github.com:slidek/addN-package.git",
+  "author": "Marcin Pajak",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">10.0.0"
+  },
+  "scripts": {
+    "build": "tsc ./src/main --outDir ./lib",
+    "test": "mocha --colors --require ts-node/register src/**/*.test.ts",
+    "tdd": "watch-run -i -p 'src/**/*' yarn test"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^8.0.1",
+    "typescript": "^3.2.4",
+    "watch-run": "^1.2.5"
+  }
+}
